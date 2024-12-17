@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sleep Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌙 Sleep Calculator</h1>
+      <p>Optimize your sleep cycles for better rest and rejuvenation.</p>
+    </header>
+
+    <main>
+      <section class="calculator">
+        <div id="input-section">
+          <h2>Choose Your Option</h2>
+
+          <div class="option">
+            <h3>1. What time do you want to wake up?</h3>
+            <label for="wakeTime">Wake-Up Time:</label>
+            <input type="time" id="wakeTime">
+            <button class="button" onclick="calculateBedtime()">Calculate Bedtimes</button>
+          </div>
+
+          <div class="option">
+            <h3>2. If you want to go to bed now...</h3>
+            <button class="button" onclick="calculateWakeTimes()">Calculate Wake-Up Times</button>
+          </div>
+        </div>
+
+        <div id="results-section" class="hidden">
+          <h2>Suggested Times</h2>
+          <div id="timeRow" class="time-row"></div>
+          <button class="button" onclick="resetCalculator()">Go Back</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2024 Sleep Calculator | Rest Easy 🌌</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
